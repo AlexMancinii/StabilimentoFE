@@ -1,0 +1,49 @@
+<mat-toolbar class="navbar-default">
+
+    <div class="navbar-header">
+        <button type="button" (click)="opened=!opened" class="navbar-toggle collapsed" data-toggle="collapse"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    
+    <span class="menu-spacer"></span>
+    <button mat-icon-button *ngIf="!getSessionUser()" [routerLink]="'/autentication/login'">
+        <mat-icon>login</mat-icon>
+    </button>
+    <button mat-icon-button *ngIf="getSessionUser()" (click)="logout()">
+        <mat-icon>logout</mat-icon>
+    </button>
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav mode="over" [(opened)]="opened">
+        <div>
+            <mat-accordion>
+
+                <!--aliquota iva-->
+                <mat-expansion-panel hideToggle *ngFor="let element of filterElementNavbar(elementiMenu)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>{{element.descrizione}}</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div *ngFor="let e of element.elementiSottoMenu">
+                        <button mat-menu-item [routerLink]="e.routerLink">{{e.descrizioneSottoMenu}}</button>
+                        <mat-divider></mat-divider>
+                    </div>
+                </mat-expansion-panel>
+
+            </mat-accordion>
+        </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

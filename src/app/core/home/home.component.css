@@ -1,0 +1,13 @@
+.container-form{
+    background-color: rgb(241, 241, 241);
+    height: 400px;
+    max-width: 1024px;
+    margin: auto;
+}
+.form {
+    height: 100%;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

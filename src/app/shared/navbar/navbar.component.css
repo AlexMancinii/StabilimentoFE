@@ -1,0 +1,22 @@
+.menu-spacer {
+    flex: 1 1 auto;
+  }
+
+  mat-sidenav-container{
+    height: 100%;
+  }
+
+  mat-sidenav{
+    padding: 16px;
+  }
+
+  mat-sidenav-content{
+    padding-top: 30px;
+  }
+  mat-sidenav{
+    background-color: gainsboro;
+  }
+
+  .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }

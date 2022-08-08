@@ -1,0 +1,46 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*elenco*/
+  .testo{
+    font-weight: bolder;
+    font-size: 14px;
+  }
+  .cursor{
+    cursor: pointer;
+  }
+  .marg-top{
+    margin-top: 10px;
+  }
+ .cell-azioni {
+    width: 100%; /*definisce lo spazio tra i pulsanti di azione*/
+    display: flex;
+    justify-content: space-around;
+  }
+  .marg-left{
+    margin-left: 30px;
+  }
+  .testo-blu{
+    font-weight: bolder;
+    font-size: 14px;
+    color:cornflowerblue;
+  }
+ 
+  /*nuovo-modifica*/
+  .a-full-width {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .struttura {
+    background-color:#F5F5F5;
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+

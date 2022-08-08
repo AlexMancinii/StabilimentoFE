@@ -1,0 +1,16 @@
+.a-full-width {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .m-bottom{
+      margin-top: 20px;
+  }
+  
+  .cn-form{
+      min-width: 150px;
+      max-width: 400px;
+      margin: auto;
+  }
+  
+  
